@@ -1,0 +1,110 @@
+// Import all of Bootstrap’s CSS
+@import "bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+*{
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+body{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            overflow-x: hidden;
+}
+
+.hero-section{
+    margin-top: 5rem;
+
+    .hero-left{
+        img{
+        height: 79px;
+        padding-left: 0;
+        align-items: flex-end;
+    }
+    h1{
+        padding-right: 0;
+        width: 70%;
+    }
+    }
+    img{
+        height: 706px;
+    }
+}
+
+.card-text{
+    padding: 0;
+}
+.card-img-top{
+    height: 77px;
+    width: 50%;
+}
+
+.perfect-solution{
+    background-color: #F2F2F2;
+    padding: 0;
+}
+
+
+
+@media(max-width:992px){
+    .hero-section{
+         display: flex;
+        flex-direction: column;
+        .hero-left{
+            .hero-left-title{
+                display: flex;
+                justify-content: center;
+            }
+            img{
+                height: 50%;
+            width: 50%;
+            }
+
+            .hero-buttons{
+                img{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .hero-section{
+        img{
+            height: 70%;
+            width: 70%;
+        }
+    }
+}
+
+@media(max-width:490px){
+
+}
+
+@media (max-width: 430px) {
+    .card-heading {
+        justify-content: center;
+
+        img{
+            height: 90%;
+            width: 90%;
+        }
+        flex-direction: column !important;  
+        text-align: center;
+    }
+    
+    .card-title {
+        font-size: 0.75rem !important; 
+    }
+    
+    .card-text {
+        font-size: 0.5rem;  
+        text-align: center;
+    }
+    .card-body{
+        padding-bottom: 10px;
+    }
+}
