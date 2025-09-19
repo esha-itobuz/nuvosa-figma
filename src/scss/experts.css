@@ -1,0 +1,19 @@
+.experts {
+  margin-left: 55px;
+  margin-right: 55px;
+}
+.experts p {
+  color: #828282;
+}
+.experts .cards {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.experts .card-img-top {
+  height: 131px;
+  width: 131px;
+}
+.experts .card:hover {
+  box-shadow: 2px 2px 5px #888888;
+  border: 0;
+}/*# sourceMappingURL=experts.css.map */

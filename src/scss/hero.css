@@ -1,0 +1,53 @@
+.hero-section .hero-left .hero-yt {
+  height: 60px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 0;
+  align-items: flex-end;
+}
+.hero-section .hero-left .expert-img {
+  height: 69.41px;
+  width: auto;
+}
+.hero-section .hero-left h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  padding-right: 0;
+  width: 70%;
+}
+.hero-section .hero-right {
+  width: 40%;
+}
+.hero-section .hero-creative {
+  background-color: #ffffff;
+  margin-right: 40rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  transform: translate(-90px, -100px);
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .hero-section .hero-left .hero-left-title {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-section .hero-left img {
+    height: 50%;
+    width: 50%;
+  }
+  .hero-section .hero-left .hero-buttons img {
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section img {
+    height: 70%;
+    width: 70%;
+  }
+}/*# sourceMappingURL=hero.css.map */

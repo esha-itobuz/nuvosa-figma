@@ -1,0 +1,10 @@
+.why-choose-us {
+  background-color: #fafafa;
+  padding: 0;
+}
+.why-choose-us p {
+  color: #828282;
+}
+.why-choose-us .card:hover {
+  box-shadow: 2px 2px 5px #888888;
+}/*# sourceMappingURL=why-choose-us.css.map */

@@ -1,0 +1,25 @@
+.plans {
+  .plans-para {
+    color: #828282;
+  }
+  .card-title {
+    color: #6f77f1;
+  }
+  background-color: #fafafa;
+  .card:hover {
+    .card-title {
+      color: #fafafa;
+    }
+    background-color: #6069ec;
+    // background-image: url("../assets/plans-2-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fafafa;
+    transform: scaleY(1.1);
+
+    .btn {
+      background-color: #fad725;
+      border: 0;
+    }
+  }
+}

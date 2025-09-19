@@ -1,0 +1,23 @@
+.plans {
+  background-color: #fafafa;
+}
+.plans .plans-para {
+  color: #828282;
+}
+.plans .card-title {
+  color: #6f77f1;
+}
+.plans .card:hover {
+  background-color: #6069ec;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: #fafafa;
+  transform: scaleY(1.1);
+}
+.plans .card:hover .card-title {
+  color: #fafafa;
+}
+.plans .card:hover .btn {
+  background-color: #fad725;
+  border: 0;
+}/*# sourceMappingURL=plans.css.map */

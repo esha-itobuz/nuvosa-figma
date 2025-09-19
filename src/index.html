@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg pt-3">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid px-lg-5">
             <img src="./assets/nuvosa.png" alt="Nuvosa Logo" class="navbar-brand p-0" style="height: 40px;" />
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,12 +52,11 @@
 
     <!-- Hero Section-->
     <div class="container-fluid px-lg-5">
-        <div
-            class="hero-section d-flex flex-column flex-lg-row justify-content-between align-items-center mt-lg-5 py-lg-5">
+        <div class="hero-section d-flex flex-column flex-lg-row justify-content-between align-items-center py-lg-1">
             <div class="hero-left col-lg-6 d-flex justify-content-center flex-column mb-4 mb-lg-0">
                 <div class="hero-left-title d-flex flex-column flex-lg-row align-items-center mb-3">
-                    <h1 class="display-4 fw-bold mb-2 mb-lg-0">Increase your web traffic with our <img
-                            class="expert-img ms-lg-3" src="./assets/expert.png" alt="Expert" /></h1>
+                    <h1 class=" fw-bold mb-2 mb-lg-0">Increase your web traffic with our <img class="expert-img ms-lg-3"
+                            src="./assets/expert.png" alt="Expert" /></h1>
                 </div>
                 <p class="hero-left-paragraph lead mb-4">It is a long established fact that a reader will be
                     distracted by the readable content of a page when It is a long. It is a long established fact that a
@@ -66,12 +65,12 @@
 
                 <div class="hero-buttons d-flex flex-column flex-lg-row align-items-center gap-3 mb-5">
                     <button class="btn btn-warning btn-lg px-4">Get Started</button>
-                    <img src="./assets/youtube.png" alt="YouTube" class="ms-lg-3" style="height: 60px;" />
+                    <img src="./assets/youtube.png" alt="YouTube" class="hero-yt ms-lg-3" />
                 </div>
             </div>
             <div
                 class="hero-right col-lg-6 d-flex flex-column flex-lg-row justify-content-center align-items-end d-none d-lg-block">
-                <img src="./assets/hero-woman.png" alt="Hero Woman" class="hero-img img-fluid"
+                <img src="./assets/hero-woman.png" alt="Hero Woman" class="hero-img img-fluid mt-5"
                     style="max-height: 600px;" />
                 <div class="hero-creative d-flex flex-column p-2 shadow-sm">
                     <p>Our Creative Team</p>
@@ -281,8 +280,8 @@
 
     <!-- Why Choose Us -->
     <div class="why-choose-us d-flex flex-column align-items-center">
-        <h2 class="why-choose-text pt-5 fw-medium">Why You Should Choose Us</h2>
-        <p class="why-choose-para p-5">It is a long established fact that a reader will be
+        <h2 class="why-choose-text pt-5 fw-medium">Why You Should <span style="color:#6F77F1">Choose Us.</span></h2>
+        <p class="why-choose-para">It is a long established fact that a reader will be
             distracted by the readable content .It is a long
             established fact that a reader.</p>
         <div class="row row-cols-1 row-cols-lg-3 g-4 p-5">
@@ -371,10 +370,11 @@
         <img src="./assets/Years Of Experience.png" class="exp-img h-75 w-75" />
     </div>
 
-    <div class="website-speed d-flex p-5 flex-column flex-xl-row align-items-center">
-        <div class="website-speed-left d-flex flex-column p-5 align-items-center">
-            <h2>Check your website speed</h2>
-            <p>It is a long established fact that a reader will be distracted by the readable
+    <div class="website-speed d-flex p-5 flex-column flex-xl-row align-items-center justify-content-center">
+        <div class="website-speed-left d-flex flex-column p-5 align-items-center justify-content-center">
+            <h2 class="website-speed-title">Check your website speed</h2>
+            <p class="website-speed-para text-center">It is a long established fact that a reader will be distracted by
+                the readable
                 content.</p>
             <div class="speed-search d-flex flex-md-row flex-column gap-3">
                 <div class="speed-input d-flex flex-md-row flex-column ">
@@ -436,13 +436,13 @@
         </div>
     </div>
 
-    <div class="experts pt-5 ps-5 pe-5">
+    <div class="experts pt-5">
         <h2 class="experts-title d-flex justify-content-center">Our Expert Team Members</h2>
         <p class="experts-para d-flex justify-content-center mb-5">It is a long established fact that a reader will be
             distracted by the readable content .It is a long
             established fact that a reader </p>
 
-        <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="cards row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
                 <div class="card d-flex flex-column align-items-center p-3">
                     <img src="./assets/expert1.png" class="card-img-top" alt="...">
@@ -716,15 +716,15 @@
         <h2>Subscribe & Find The Perfect Cosmetics</h2>
         <p>Enter your email and get updated new products & news</p>
         <div class="subscribe-search d-flex flex-md-row flex-column gap-3">
-            <input type="text" placeholder="Name" class="subscribe-input-name p-2"></input>
-            <input type="text" placeholder="Email Address" class="subscribe-input-email p-2"></input>
-            <button type="submit" class="btn btn-info d-flex justify-content-center">Subscribe</button>
+            <input type="text" placeholder="Name" class="subscribe-input-name p-2 rounded w-100"></input>
+            <input type="text" placeholder="Email Address" class="subscribe-input-email p-2 rounded w-100"></input>
+            <button type="submit" class="btn d-flex justify-content-center">Subscribe</button>
         </div>
     </div>
 
     <div class="bottom-nav pt-5 d-flex flex-column align-items-center">
         <img src="./assets/nuvosa.png" />
-        <div class="bottom-nav-options d-flex flex-column flex-md-row gap-lg-5 gap-2">
+        <div class="bottom-nav-options d-flex flex-column flex-md-row gap-lg-5 gap-2 mt-3">
             <p>Overview</p>
             <p>Pricing</p>
             <p>Careers</p>

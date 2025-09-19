@@ -1,0 +1,28 @@
+.management .card {
+  box-shadow: 33px rgba(2, 22, 5, 0.0705882353);
+}
+.management img {
+  height: 129px;
+}
+
+@media (max-width: 430px) {
+  .management .card-heading {
+    justify-content: center;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .management .card-heading img {
+    height: 90%;
+    width: 90%;
+  }
+  .management .card-title {
+    font-size: 0.75rem !important;
+  }
+  .management .card-text {
+    font-size: 0.5rem;
+    text-align: center;
+  }
+  .management .card-body {
+    padding-bottom: 10px;
+  }
+}/*# sourceMappingURL=management.css.map */

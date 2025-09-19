@@ -1,0 +1,20 @@
+.experts {
+  p {
+    color: #828282;
+  }
+  .cards {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  margin-left: 55px;
+  margin-right: 55px;
+  .card-img-top {
+    height: 131px;
+    width: 131px;
+  }
+
+  .card:hover {
+    box-shadow: 2px 2px 5px #888888;
+    border: 0;
+  }
+}

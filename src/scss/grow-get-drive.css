@@ -1,0 +1,9 @@
+.grow-get-drive .card-img-top {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0;
+}
+.grow-get-drive .card-img-top img {
+  height: 71px;
+  width: 71px;
+}/*# sourceMappingURL=grow-get-drive.css.map */
