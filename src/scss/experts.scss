@@ -3,8 +3,6 @@
     color: #828282;
   }
   .cards {
-    padding-left: 100px;
-    padding-right: 100px;
   }
   margin-left: 55px;
   margin-right: 55px;
@@ -16,5 +14,14 @@
   .card:hover {
     box-shadow: 2px 2px 5px #888888;
     border: 0;
+  }
+}
+
+@media (min-width: 1850px) {
+  .experts {
+    .cards {
+      padding-left: 377px;
+      padding-right: 377px;
+    }
   }
 }

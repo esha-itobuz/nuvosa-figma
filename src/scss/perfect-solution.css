@@ -1,8 +1,8 @@
 .perfect-solution {
-  background-color: #f2f2f2;
+  background-image: url("../assets/perfect-sol-bg.png");
+  background-size: contain;
+  background-position: center;
   padding: 0;
-  padding-left: 30px;
-  padding-right: 30px;
   margin: 0;
 }
 .perfect-solution p {
@@ -10,4 +10,13 @@
 }
 .perfect-solution .perfect-solution-text {
   padding-right: 0;
+}
+
+@media (min-width: 1850px) {
+  .perfect-solution {
+    padding-left: 333px;
+    padding-right: 333px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
 }/*# sourceMappingURL=perfect-solution.css.map */

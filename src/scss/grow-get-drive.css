@@ -6,4 +6,11 @@
 .grow-get-drive .card-img-top img {
   height: 71px;
   width: 71px;
+}
+
+@media (min-width: 1850px) {
+  .grow-get-drive {
+    padding-left: 333px;
+    padding-right: 333px;
+  }
 }/*# sourceMappingURL=grow-get-drive.css.map */
