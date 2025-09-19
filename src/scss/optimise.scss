@@ -1,4 +1,32 @@
 .optimise-website {
+  .optimise-keyword {
+    .card {
+      background-image: url("../assets/1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .optimise-content {
+    .card {
+      background-image: url("../assets/2.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .optimise-target {
+    .card {
+      background-image: url("../assets/3.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .optimise-continuous {
+    .card {
+      background-image: url("../assets/4.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
   .col:hover {
     border-bottom: 4px solid #717ae0;
   }
