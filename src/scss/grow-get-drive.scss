@@ -1,17 +1,167 @@
 .grow-get-drive {
-  .card-img-top {
-    img {
-      height: 71px;
-      width: 71px;
+  padding: 30px 15px;
+  
+  .card {
+    height: auto;
+    min-height: 220px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 40px rgba(2, 22, 5, 0.1);
     }
+    
+    .card-body {
+      padding: 20px;
+      
+      .card-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 1.3;
+      }
+      
+      .card-text {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+      }
+      
+      .card-read-text {
+        color: #6F77F1;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: auto;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        
+        &:hover {
+          color: #5a63d8;
+        }
+      }
+    }
+  }
+  
+  .card-img-top {
+    height: 50px;
+    width: 50px;
     object-fit: contain;
     padding: 0;
+    margin-bottom: 15px;
   }
 }
+
+@media (min-width: 576px) {
+  .grow-get-drive {
+    padding: 40px 20px;
+    
+    .card {
+      min-height: 240px;
+      
+      .card-body {
+        .card-title {
+          font-size: 20px;
+        }
+        
+        .card-text {
+          font-size: 15px;
+        }
+        
+        .card-read-text {
+          font-size: 14px;
+        }
+      }
+    }
+    
+    .card-img-top {
+      height: 55px;
+      width: 55px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .grow-get-drive {
+    padding: 50px 40px;
+    
+    .card {
+      min-height: 260px;
+      
+      .card-body {
+        .card-title {
+          font-size: 22px;
+        }
+        
+        .card-text {
+          font-size: 16px;
+        }
+      }
+    }
+    
+    .card-img-top {
+      height: 60px;
+      width: 60px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .grow-get-drive {
+    padding: 60px 50px;
+    
+    .card {
+      min-height: 280px;
+      
+      .card-body {
+        .card-title {
+          font-size: 24px;
+        }
+      }
+    }
+    
+    .card-img-top {
+      height: 65px;
+      width: 65px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .grow-get-drive {
+    padding: 70px 60px;
+    
+    .card {
+      height: 289px;
+      
+      .card-body {
+        padding: 25px;
+      }
+    }
+    
+    .card-img-top {
+      height: 71px;
+      width: 71px;
+      margin-bottom: 22px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .grow-get-drive {
+    padding: 80px 100px;
+  }
+}
+
 
 @media (min-width: 1850px) {
   .grow-get-drive {
     padding-left: 333px;
     padding-right: 333px;
+
+    .card {
+      width: 370px;
+    }
   }
 }

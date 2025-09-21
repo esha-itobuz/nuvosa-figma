@@ -1,12 +1,249 @@
 .why-choose-us {
+
+  background-color: #fafafa;
+  padding: 30px 15px;
+  
+  .why-choose-text {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .why-choose-para {
+    font-size: 14px;
+    text-align: center;
+    color: #828282;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 300px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    
+    .card-img-top {
+      height: 204px;
+      width: fit-content;
+      margin-bottom: 20px;
+    }
+    
+    .card-body {
+      .card-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      
+      .card-text {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      
+      .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+    }
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px #0216051A;
+    }
+  }
+  
   p {
     color: #828282;
   }
+}
 
-  background-color: #fafafa;
-  padding: 0;
+@media (min-width: 576px) {
+  .why-choose-us {
+    padding: 40px 20px;
+    
+    .why-choose-text {
+      font-size: 32px;
+    }
+    
+    .why-choose-para {
+      font-size: 16px;
+    }
+    
+    .card {
+      min-height: 320px;
+      
+      .card-img-top {
+        max-width: 90px;
+      }
+      
+      .card-body {
+        .card-title {
+          font-size: 20px;
+        }
+        
+        .card-text {
+          font-size: 15px;
+        }
+        
+        .btn {
+          font-size: 15px;
+          padding: 12px 24px;
+        }
+      }
+    }
+  }
+}
 
-  .card:hover {
-    box-shadow: 2px 2px 5px #888888;
+@media (min-width: 768px) {
+  .why-choose-us {
+    padding: 50px 40px;
+    
+    .why-choose-text {
+      font-size: 36px;
+    }
+    
+    .why-choose-para {
+      font-size: 17px;
+    }
+    
+    .card {
+      min-height: 380px;
+      
+      .card-img-top {
+        max-width: 100px;
+      }
+      
+      .card-body {
+        .card-title {
+          font-size: 22px;
+        }
+        
+        .card-text {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .why-choose-us {
+    padding: 60px 50px;
+    
+    .why-choose-text {
+      font-size: 42px;
+    }
+    
+    .card {
+      min-height: 420px;
+      
+      .card-img-top {
+        // max-width: 110px;
+      }
+      
+      .card-body {
+        .card-title {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .why-choose-us {
+    padding: 70px 60px;
+    
+    .why-choose-text {
+      font-size: 48px;
+    }
+    
+    .card {
+      min-height: 460px;
+      
+      .card-img-top {
+        
+      }
+      
+      .card-body {
+        .card-title {
+          font-size: 26px;
+        }
+        
+        .card-text {
+          font-size: 17px;
+        }
+        
+        .btn {
+          font-size: 16px;
+          padding: 12px 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .why-choose-us {
+    padding: 80px 100px;
+    
+    .why-choose-text {
+      font-size: 52px;
+    }
+    
+    .card {
+      min-height: 500px;
+    }
+  }
+}
+
+@media (min-width: 1850px) {
+  .why-choose-us {
+    padding-left: 376px;
+    padding-right: 376px;
+    
+    .why-choose-text {
+      font-size: 55px;
+    }
+    
+    .why-choose-para {
+      font-size: 17px;
+    }
+    
+    .row {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: center;
+      align-items: stretch;
+      gap: 20px;
+    }
+    
+    .col {
+      flex: 0 0 auto !important;
+      width: auto !important;
+      max-width: none !important;
+    }
+    
+    .card {
+      width: 365px;
+      height: 548px;
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 0;
+      
+      .card-img-top {
+        width: 307px !important;
+        height: auto !important;
+        max-width: none !important;
+      }
+    }
   }
 }

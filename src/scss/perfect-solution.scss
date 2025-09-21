@@ -1,15 +1,146 @@
 .perfect-solution {
+  padding: 20px 15px;
+  margin: 20px 0;
+  background-image: url("../assets/perfect-sol-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  .perfect-solution-text {
+    text-align: center;
+    padding: 20px 0;
+    
+    h2 {
+      font-size: 24px;
+      line-height: 1.3;
+      margin-bottom: 15px;
+    }
+    
+    .lead {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+  
+  .perfect-img {
+    text-align: center;
+    padding: 20px 0;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
   p {
     color: #828282;
   }
-  background-image: url("../assets/perfect-sol-bg.png");
-  background-size: contain;
-  background-position: center;
-  padding: 0;
-  margin: 0;
+}
 
-  .perfect-solution-text {
-    padding-right: 0;
+@media (min-width: 576px) {
+  .perfect-solution {
+    padding: 30px 20px;
+    margin: 30px 0;
+    
+    .perfect-solution-text {
+      h2 {
+        font-size: 28px;
+      }
+      
+      .lead {
+        font-size: 18px;
+      }
+      
+      .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .perfect-solution {
+    padding: 40px 30px;
+    margin: 40px 0;
+    flex-direction: row;
+    
+    .perfect-solution-text {
+      text-align: left;
+      padding: 30px 20px;
+      
+      h2 {
+        font-size: 32px;
+      }
+      
+      .lead {
+        font-size: 20px;
+      }
+      
+      .btn {
+        align-self: flex-start;
+      }
+    }
+    
+    .perfect-img {
+      padding: 20px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .perfect-solution {
+    padding: 50px 40px;
+    
+    .perfect-solution-text {
+      padding: 40px 30px;
+      
+      h2 {
+        font-size: 36px;
+      }
+      
+      .lead {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .perfect-solution {
+    padding: 60px 50px;
+    
+    .perfect-solution-text {
+      padding: 50px 40px;
+      
+      h2 {
+        font-size: 42px;
+      }
+      
+      .lead {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .perfect-solution {
+    padding: 80px 100px;
+    
+    .perfect-solution-text {
+      padding: 60px 50px;
+      
+      h2 {
+        font-size: 48px;
+      }
+    }
   }
 }
 

@@ -2,10 +2,10 @@
   p {
     color: #828282;
   }
-  .cards {
-  }
+  
   margin-left: 55px;
   margin-right: 55px;
+  
   .card-img-top {
     height: 131px;
     width: 131px;
@@ -14,6 +14,52 @@
   .card:hover {
     box-shadow: 2px 2px 5px #888888;
     border: 0;
+  }
+
+  #expertsCarousel {
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+      color: #6F77F1;
+      
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: #6F77F1;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .carousel-indicators {
+      button {
+        background-color: #6F77F1;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 5px;
+        border: none;
+        
+        &.active {
+          background-color: #5a63d8;
+        }
+      }
+    }
+
+    .carousel-item {
+      padding: 20px;
+      
+      .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
   }
 }
 

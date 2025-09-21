@@ -1,28 +1,230 @@
 .plans {
+  padding: 30px 15px;
+  background-color: #fafafa;
+  
+  .plans-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
   .plans-para {
     color: #828282;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
   }
+  
   .card {
-    height: 523px;
-  }
-  .card-title {
-    color: #6f77f1;
-  }
-  background-color: #fafafa;
-  .card:hover {
-    .card-title {
+    height: auto;
+    min-height: 350px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    
+    .card-body {
+      padding: 25px 20px;
+      
+      .card-title {
+        color: #6f77f1;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      
+      .card-price {
+        font-size: 24px;
+        font-weight: 700;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+      
+      .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 15px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+      }
+    }
+    
+    &:hover {
+      background-color: #6069ec;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
       color: #fafafa;
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(96, 105, 236, 0.3);
+      
+      .card-title {
+        color: #fafafa;
+      }
+      
+      .card-price {
+        color: #fafafa;
+      }
+      
+      p {
+        color: #fafafa;
+      }
+      
+      .btn {
+        background-color: #fad725;
+        color: #333;
+        border: 0;
+        
+        &:hover {
+          background-color: #f5d000;
+        }
+      }
     }
-    background-color: #6069ec;
-    // background-image: url("../assets/plans-2-bg.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    color: #fafafa;
-    transform: scaleY(1.1);
+  }
+}
 
-    .btn {
-      background-color: #fad725;
-      border: 0;
+@media (min-width: 576px) {
+  .plans {
+    padding: 40px 20px;
+    
+    .plans-title {
+      font-size: 32px;
     }
+    
+    .plans-para {
+      font-size: 16px;
+    }
+    
+    .card {
+      min-height: 380px;
+      
+      .card-body {
+        padding: 30px 25px;
+        
+        .card-title {
+          font-size: 22px;
+        }
+        
+        .card-price {
+          font-size: 28px;
+        }
+        
+        p {
+          font-size: 15px;
+        }
+        
+        .btn {
+          font-size: 15px;
+          padding: 12px 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .plans {
+    padding: 50px 40px;
+    
+    .plans-title {
+      font-size: 36px;
+    }
+    
+    .plans-para {
+      font-size: 18px;
+    }
+    
+    .card {
+      min-height: 420px;
+      
+      .card-body {
+        padding: 35px 30px;
+        
+        .card-title {
+          font-size: 24px;
+        }
+        
+        .card-price {
+          font-size: 32px;
+        }
+        
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .plans {
+    padding: 60px 50px;
+    
+    .card {
+      min-height: 450px;
+      
+      .card-body {
+        padding: 40px 35px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .plans {
+    padding: 70px 60px;
+    
+    .plans-title {
+      font-size: 42px;
+    }
+    
+    .plans-para {
+      font-size: 20px;
+    }
+    
+    .card {
+      height: 523px;
+      
+      .card-body {
+        padding: 45px 40px;
+        
+        .card-title {
+          font-size: 28px;
+        }
+        
+        .card-price {
+          font-size: 36px;
+        }
+        
+        p {
+          font-size: 17px;
+        }
+        
+        .btn {
+          font-size: 16px;
+          padding: 12px 24px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .plans {
+    padding: 80px 100px;
+  }
+}
+
+@media (min-width: 1850px) {
+  .plans {
+    padding: 100px 200px;
   }
 }

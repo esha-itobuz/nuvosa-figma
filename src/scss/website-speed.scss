@@ -1,17 +1,234 @@
 .website-speed {
+  // padding: 30px 15px;
+  flex-direction: column;
+  
+  .website-speed-left {
+    padding: 20px 0;
+    
+    .website-speed-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    
+    .website-speed-para {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #828282;
+      margin-bottom: 25px;
+    }
+    
+    .speed-search {
+      flex-direction: column;
+      gap: 15px;
+      
+      .speed-input {
+        gap: 0;
+        
+        input {
+          background-color: #f2f2f2;
+          border: 1px solid #dfdfdf;
+          border-radius: 4px;
+          padding: 12px 15px;
+          font-size: 14px;
+          width: 100%;
+          
+          &:focus {
+            outline: none;
+            border-color: #6F77F1;
+          }
+        }
+        
+        .speed-input-web {
+          border-bottom: 1px solid #dfdfdf;
+          border-radius: 4px 4px 0 0;
+          margin-bottom: -1px;
+        }
+        
+        .speed-input-email {
+          border-radius: 0 0 4px 4px;
+        }
+      }
+      
+      .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        min-height: 45px;
+      }
+    }
+  }
+  
+  img {
+    display: none;
+  }
+  
   p {
     color: #828282;
   }
-  input {
-    background-color: #f2f2f2;
-    width: 288.5px;
-    border-top: 0;
-    border-bottom: 0;
-    border-left: 0;
+}
+
+@media (min-width: 576px) {
+  .website-speed {
+    padding: 40px 20px;
+    
+    .website-speed-left {
+      .website-speed-title {
+        font-size: 28px;
+      }
+      
+      .website-speed-para {
+        font-size: 16px;
+      }
+      
+      .speed-search {
+        .speed-input {
+          input {
+            padding: 14px 18px;
+            font-size: 15px;
+          }
+        }
+        
+        .btn {
+          padding: 14px 24px;
+          font-size: 15px;
+        }
+      }
+    }
   }
-  .speed-input-email {
-    input {
-      border-right: 0;
+}
+
+@media (min-width: 768px) {
+  .website-speed {
+    padding: 50px 40px;
+    
+    .website-speed-left {
+      .website-speed-title {
+        font-size: 32px;
+      }
+      
+      .website-speed-para {
+        font-size: 18px;
+      }
+      
+      .speed-search {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        
+        .speed-input {
+          flex-direction: row;
+          
+          .speed-input-web {
+            border-radius: 4px 0 0 4px;
+            border-right: 2px solid #dfdfdf;
+            margin-bottom: 0;
+            width: 200px;
+          }
+          
+          .speed-input-email {
+            border-radius: 0 4px 4px 0;
+            border-left: 0;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .website-speed {
+    padding: 60px 50px;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    
+    .website-speed-left {
+      flex: 1;
+      
+      .website-speed-title {
+        font-size: 36px;
+        text-align: left;
+      }
+      
+      .website-speed-para {
+        font-size: 20px;
+        text-align: left;
+      }
+      
+      .speed-search {
+        .speed-input {
+          .speed-input-web,
+          .speed-input-email {
+            width: 180px;
+          }
+        }
+      }
+    }
+    
+    img {
+      display: block;
+      max-width: 40%;
+      height: auto;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .website-speed {
+    padding: 80px 60px;
+    gap: 50px;
+    
+    .website-speed-left {
+      .website-speed-title {
+        font-size: 42px;
+      }
+      
+      .speed-search {
+        .speed-input {
+          .speed-input-web,
+          .speed-input-email {
+            width: 220px;
+            padding: 16px 20px;
+          }
+        }
+        
+        .btn {
+          padding: 16px 28px;
+          font-size: 16px;
+        }
+      }
+    }
+    
+    img {
+      max-width: 45%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .website-speed {
+    padding: 100px 80px;
+    
+    .speed-search {
+      .speed-input {
+        .speed-input-web,
+        .speed-input-email {
+          width: 288.5px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1850px) {
+  .website-speed {
+    padding: 120px 127px;
+    
+    img {
+      max-width: 600px;
     }
   }
 }
