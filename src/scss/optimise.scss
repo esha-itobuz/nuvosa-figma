@@ -1,6 +1,13 @@
 .optimise-website {
   padding-left: 127px;
   padding-right: 67px;
+
+  .card{
+    height: 472px;
+  }
+  .card-body {
+    flex-grow: 1;
+  }
   .optimise-keyword {
     .card {
       background-image: url("../assets/1.png");
@@ -32,4 +39,20 @@
   .col:hover {
     border-bottom: 4px solid #717ae0;
   }
+}
+
+@media (min-width: 1850px){
+.optimise-website{
+  h2{
+    font-size: 55px;
+  }
+  .optimise-para{
+    font-size: 20px;
+    font-weight: 400;
+    width: 827px;
+  }
+  .card{
+    width: 400px;
+  }
+}
 }

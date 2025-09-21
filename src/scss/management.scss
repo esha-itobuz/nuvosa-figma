@@ -3,6 +3,10 @@
   padding-right: 70px;
   .card {
     box-shadow: 33px #02160512;
+    height: 334px;
+  }
+  .card-body {
+    height: 100%;
   }
   img {
     height: 129px;
@@ -13,8 +17,20 @@
   .management {
     padding-left: 127px;
     padding-right: 127px;
+  
 
-    
+    h5{
+      font-size: 38px;
+      font-weight: 400;
+      padding-left: 30px;
+      padding-right: 70px;
+    }
+    p{
+      font-size: 17px;
+      font-weight: 400;
+      padding-left: 25px;
+      padding-right: 18px;
+    }
   }
 }
 @media (max-width: 430px) {
