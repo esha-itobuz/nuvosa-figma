@@ -1,10 +1,201 @@
 .why-choose-us {
   background-color: #fafafa;
-  padding: 0;
+  padding: 30px 15px;
+}
+.why-choose-us .why-choose-text {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.why-choose-us .why-choose-para {
+  font-size: 14px;
+  text-align: center;
+  color: #828282;
+  margin-bottom: 30px;
+}
+.why-choose-us .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 300px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.why-choose-us .card .card-img-top {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.why-choose-us .card .card-body .card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.why-choose-us .card .card-body .card-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.why-choose-us .card .card-body .btn {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.why-choose-us .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(2, 22, 5, 0.1019607843);
 }
 .why-choose-us p {
   color: #828282;
 }
-.why-choose-us .card:hover {
-  box-shadow: 2px 2px 5px #888888;
+
+@media (min-width: 576px) {
+  .why-choose-us {
+    padding: 40px 20px;
+  }
+  .why-choose-us .card .card-img-top {
+    width: 120px;
+  }
+  .why-choose-us .why-choose-text {
+    font-size: 32px;
+  }
+  .why-choose-us .why-choose-para {
+    font-size: 16px;
+  }
+  .why-choose-us .card {
+    min-height: 320px;
+  }
+  .why-choose-us .card .card-body .card-title {
+    font-size: 20px;
+  }
+  .why-choose-us .card .card-body .card-text {
+    font-size: 15px;
+  }
+  .why-choose-us .card .card-body .btn {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+}
+@media (min-width: 768px) {
+  .why-choose-us {
+    padding: 50px 40px;
+  }
+  .why-choose-us .why-choose-text {
+    font-size: 36px;
+  }
+  .why-choose-us .why-choose-para {
+    font-size: 17px;
+  }
+  .why-choose-us .card {
+    min-height: 380px;
+  }
+  .why-choose-us .card .card-img-top {
+    width: 140px;
+  }
+  .why-choose-us .card .card-body .card-title {
+    font-size: 22px;
+  }
+  .why-choose-us .card .card-body .card-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .why-choose-us {
+    padding: 60px 50px;
+  }
+  .why-choose-us .why-choose-text {
+    font-size: 42px;
+  }
+  .why-choose-us .card {
+    min-height: 420px;
+  }
+  .why-choose-us .card .card-img-top {
+    width: 160px;
+  }
+  .why-choose-us .card .card-body .card-title {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .why-choose-us {
+    padding: 70px 60px;
+  }
+  .why-choose-us .why-choose-text {
+    font-size: 48px;
+  }
+  .why-choose-us .card {
+    min-height: 460px;
+  }
+  .why-choose-us .card .card-img-top {
+    width: 180px;
+  }
+  .why-choose-us .card .card-body .card-title {
+    font-size: 26px;
+  }
+  .why-choose-us .card .card-body .card-text {
+    font-size: 17px;
+  }
+  .why-choose-us .card .card-body .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+@media (min-width: 1400px) {
+  .why-choose-us {
+    padding: 80px 100px;
+  }
+  .why-choose-us .card .card-img-top {
+    width: 220px;
+  }
+  .why-choose-us .why-choose-text {
+    font-size: 52px;
+  }
+  .why-choose-us .card {
+    min-height: 500px;
+  }
+}
+@media (min-width: 1850px) {
+  .why-choose-us {
+    padding-left: 376px;
+    padding-right: 376px;
+  }
+  .why-choose-us .why-choose-text {
+    font-size: 55px;
+  }
+  .why-choose-us .why-choose-para {
+    font-size: 17px;
+  }
+  .why-choose-us .row {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .why-choose-us .col {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    max-width: none !important;
+  }
+  .why-choose-us .card {
+    width: 365px;
+    height: 548px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .why-choose-us .card .card-img-top {
+    width: 307px !important;
+    height: 204px !important;
+    max-width: none !important;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }/*# sourceMappingURL=why-choose-us.css.map */

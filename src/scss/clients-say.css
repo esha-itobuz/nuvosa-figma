@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .clients-say p {
   color: #828282;
 }
@@ -24,7 +25,8 @@
 }
 
 .testimonial-card {
-  background-color: #f8f9fa;
+  background-image: url("../assets/“.png");
+  background-repeat: no-repeat;
   color: #212529;
   border: 2px solid #dee2e6;
   transition: all 0.3s ease;
@@ -32,8 +34,7 @@
 }
 
 .testimonial-card:hover {
-  border-color: #0d6efd;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(2, 22, 5, 0.1);
 }
 
 .avatar {

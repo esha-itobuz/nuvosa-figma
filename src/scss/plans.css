@@ -1,26 +1,177 @@
 .plans {
+  padding: 30px 15px;
   background-color: #fafafa;
+}
+.plans .plans-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .plans .plans-para {
   color: #828282;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .plans .card {
-  height: 523px;
+  height: auto;
+  min-height: 350px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  background-color: white;
 }
-.plans .card-title {
+.plans .card .card-body .card-title {
   color: #6f77f1;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.plans .card .card-body .card-price {
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.plans .card .card-body .card-price .plan-dollar {
+  font-size: 16px;
+}
+.plans .card .card-body .card-price .plan-number {
+  font-size: 42px;
+}
+.plans .card .card-body .card-price .plan-month {
+  font-size: 18px;
+  margin-top: 25px;
+}
+.plans .card .card-body p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.plans .card .card-body .btn {
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 .plans .card:hover {
-  background-color: #6069ec;
-  background-size: 100% 100%;
+  background-image: url("../assets/plans-2-bg.png");
+  background-size: cover;
   background-repeat: no-repeat;
   color: #fafafa;
-  transform: scaleY(1.1);
+  transform: translateY(-10px);
 }
-.plans .card:hover .card-title {
+.plans .card:hover .card-title,
+.plans .card:hover .card-price,
+.plans .card:hover p {
   color: #fafafa;
 }
 .plans .card:hover .btn {
   background-color: #fad725;
+  color: #333;
   border: 0;
+}
+.plans .card:hover .btn:hover {
+  background-color: #f5d000;
+}
+
+@media (min-width: 576px) {
+  .plans {
+    padding: 40px 20px;
+  }
+  .plans .plans-title {
+    font-size: 32px;
+  }
+  .plans .plans-para {
+    font-size: 16px;
+  }
+  .plans .card {
+    min-height: 380px;
+  }
+  .plans .card .card-body .card-title {
+    font-size: 22px;
+  }
+  .plans .card .card-body .card-price {
+    font-size: 28px;
+  }
+  .plans .card .card-body p {
+    font-size: 15px;
+  }
+  .plans .card .card-body .btn {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+}
+@media (min-width: 768px) {
+  .plans {
+    padding: 50px 40px;
+  }
+  .plans .plans-title {
+    font-size: 36px;
+  }
+  .plans .plans-para {
+    font-size: 18px;
+  }
+  .plans .card {
+    min-height: 420px;
+  }
+  .plans .card .card-body .card-title {
+    font-size: 24px;
+  }
+  .plans .card .card-body .card-price {
+    font-size: 32px;
+  }
+  .plans .card .card-body p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .plans {
+    padding: 60px 50px;
+  }
+  .plans .card {
+    min-height: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .plans {
+    padding: 70px 60px;
+  }
+  .plans .plans-title {
+    font-size: 42px;
+  }
+  .plans .plans-para {
+    font-size: 20px;
+  }
+  .plans .card {
+    height: 523px;
+  }
+  .plans .card .card-body .card-title {
+    font-size: 28px;
+  }
+  .plans .card .card-body .card-price {
+    font-size: 36px;
+  }
+  .plans .card .card-body p {
+    font-size: 17px;
+  }
+  .plans .card .card-body .btn {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+}
+@media (min-width: 1400px) {
+  .plans {
+    padding: 80px 100px;
+  }
+}
+@media (min-width: 1850px) {
+  .plans {
+    padding-left: 376px;
+    padding-right: 377px;
+  }
 }/*# sourceMappingURL=plans.css.map */

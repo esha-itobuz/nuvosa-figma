@@ -1,0 +1,66 @@
+.navbar {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 78px;
+}
+.navbar .navbar-brand {
+  height: 30px;
+}
+.navbar .navbar-nav .nav-link {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+.navbar .d-flex {
+  gap: 8px;
+}
+.navbar .d-flex .btn {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .navbar .navbar-brand {
+    height: 35px;
+  }
+  .navbar .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+  .navbar .d-flex {
+    gap: 10px;
+  }
+  .navbar .d-flex .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .navbar .navbar-brand {
+    height: 40px;
+  }
+  .navbar .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .navbar .d-flex {
+    gap: 12px;
+  }
+  .navbar .d-flex .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 1850px) {
+  .navbar {
+    padding-left: 127px;
+    padding-right: 128px;
+  }
+}/*# sourceMappingURL=nav.css.map */

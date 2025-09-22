@@ -35,35 +35,36 @@ body {
 .container-fluid {
   padding-left: 15px;
   padding-right: 15px;
-  
+
   @media (min-width: 576px) {
     padding-left: 20px;
     padding-right: 20px;
   }
-  
+
   @media (min-width: 768px) {
     padding-left: 40px;
     padding-right: 40px;
   }
-  
+
   @media (min-width: 1200px) {
     padding-left: 70px;
     padding-right: 70px;
   }
-  
+
   @media (min-width: 1850px) {
     padding-left: 127px;
     padding-right: 127px;
   }
 }
 
-section, .section {
+section,
+.section {
   margin-bottom: 30px;
-  
+
   @media (min-width: 768px) {
     margin-bottom: 50px;
   }
-  
+
   @media (min-width: 1200px) {
     margin-bottom: 80px;
   }
@@ -71,19 +72,19 @@ section, .section {
 
 .responsive-title {
   font-size: 24px;
-  
+
   @media (min-width: 576px) {
     font-size: 28px;
   }
-  
+
   @media (min-width: 768px) {
     font-size: 32px;
   }
-  
+
   @media (min-width: 1200px) {
     font-size: 42px;
   }
-  
+
   @media (min-width: 1850px) {
     font-size: 48px;
   }
@@ -91,15 +92,15 @@ section, .section {
 
 .responsive-subtitle {
   font-size: 14px;
-  
+
   @media (min-width: 576px) {
     font-size: 16px;
   }
-  
+
   @media (min-width: 768px) {
     font-size: 18px;
   }
-  
+
   @media (min-width: 1200px) {
     font-size: 20px;
   }
@@ -113,7 +114,7 @@ img {
 .btn {
   transition: all 0.3s ease;
   border-radius: 6px;
-  
+
   &:hover {
     transform: translateY(-2px);
   }
@@ -122,9 +123,9 @@ img {
 .card {
   border-radius: 12px;
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
 }

@@ -1,38 +1,160 @@
 .management {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding: 30px 15px;
 }
 .management .card {
-  box-shadow: 33px rgba(2, 22, 5, 0.0705882353);
+  box-shadow: 0 2px 8px rgba(2, 22, 5, 0.08);
+  height: auto;
+  min-height: 250px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.management img {
-  height: 129px;
+.management .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(2, 22, 5, 0.15);
+}
+.management .card-body {
+  height: 100%;
+  padding: 20px;
+}
+.management .card-heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.management .card-heading img {
+  height: 60px;
+  width: auto;
+  margin-bottom: 10px;
+}
+.management .card-heading h5.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.management .card-text {
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+.management .bi-arrow-right {
+  align-self: center;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #6f77f1;
 }
 
+@media (min-width: 576px) {
+  .management {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .management .card {
+    min-height: 280px;
+  }
+  .management .card-heading img {
+    height: 70px;
+  }
+  .management .card-heading h5.card-title {
+    font-size: 18px;
+  }
+  .management .card-text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .management {
+    padding: 40px;
+  }
+  .management .card {
+    min-height: 300px;
+  }
+  .management .card-heading img {
+    height: 80px;
+  }
+  .management .card-heading h5.card-title {
+    font-size: 20px;
+  }
+  .management .card-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .management {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .management .card {
+    min-height: 320px;
+  }
+  .management .card-heading img {
+    height: 100px;
+  }
+  .management .card-heading h5.card-title {
+    font-size: 22px;
+  }
+  .management .card-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .management {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .management .card {
+    height: 334px;
+  }
+  .management .card-heading img {
+    height: 129px;
+  }
+  .management .card-heading h5.card-title {
+    font-size: 24px;
+  }
+  .management .card-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1849px) {
+  .management .card-heading {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+  .management .card-heading img {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  .management .card-heading h5.card-title {
+    font-size: 33px;
+  }
+  .management .card-text {
+    text-align: left;
+  }
+  .management .bi-arrow-right {
+    align-self: flex-end;
+    margin-top: 0;
+  }
+}
 @media (min-width: 1850px) {
   .management {
     padding-left: 127px;
     padding-right: 127px;
   }
-}
-@media (max-width: 430px) {
-  .management .card-heading {
-    justify-content: center;
-    flex-direction: column !important;
-    text-align: center;
+  .management .card {
+    height: 334px;
   }
-  .management .card-heading img {
-    height: 90%;
-    width: 90%;
+  .management .card-heading h5.card-title {
+    font-size: 38px;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 70px;
   }
-  .management .card-title {
-    font-size: 0.75rem !important;
-  }
-  .management .card-text {
-    font-size: 0.5rem;
-    text-align: center;
-  }
-  .management .card-body {
-    padding-bottom: 10px;
+  .management .card-heading + .card-text {
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 25px;
+    padding-right: 18px;
+    padding-top: 20px;
   }
 }/*# sourceMappingURL=management.css.map */
