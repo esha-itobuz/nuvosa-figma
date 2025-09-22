@@ -12,9 +12,11 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./scss/styles.scss" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg">
         <img src="./assets/nuvosa.png" alt="Nuvosa Logo" class="navbar-brand p-0" style="height: 40px;" />
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -60,15 +62,15 @@
                 reader will be distracted by the readable content of a
                 is simply. It is a long established fact that a reader will be distracted.</p>
 
-            <div class="hero-buttons d-flex flex-column flex-lg-row align-items-center gap-3 mb-5">
+            <div class="hero-buttons d-flex flex-column flex-lg-row align-items-center gap-3 mb-lg-5">
                 <button class="btn btn-warning btn-lg px-4">Get Started</button>
                 <img src="./assets/youtube.png" alt="YouTube" class="hero-yt ms-lg-3" />
             </div>
         </div>
         <div
-            class="hero-right col-lg-6 d-flex flex-column flex-lg-row justify-content-center align-items-end d-none d-lg-block">
+            class="hero-right col-lg-6 d-flex flex-column flex-lg-row justify-content-center align-items-end d-lg-block">
             <img src="./assets/hero-woman.png" alt="Hero Woman" class="hero-img mt-5" style="max-height: 706px;" />
-            <div class="hero-creative d-flex flex-column p-2 shadow-sm">
+            <div class="hero-creative d-flex flex-column p-2 shadow-sm d-xxs-none">
                 <p>Our Creative Team</p>
                 <img src="./assets/creative-team.png" class="creative-img" />
             </div>
@@ -124,7 +126,7 @@
                         <div class="card-heading d-flex flex-column flex-xxl-row align-items-center mb-3">
                             <img src="./assets/seo-mng.png" alt="SEO Management"
                                 class="me-xxl-2 mb-2 mb-xxl-0 w-auto" />
-                            <h5 class="card-title mb-0 text-center fw-normal text-xx    l-start">SEO Management</h5>
+                            <h5 class="card-title mb-0 text-center fw-normal text-xxl-start">SEO Management</h5>
                         </div>
                         <p class="card-text text-muted flex-grow-1 text-center text-xxl-start">
                             It is a long established fact that a reader will be distracted by the readable content.
@@ -139,7 +141,7 @@
     </div>
 
     <!-- Optimize Website Section -->
-    <div class="optimise-website mt-5">
+    <div class="optimise-website mt-lg-5">
         <h2 class="mb-3 fw-medium">Optimising your <span style="color: #6F77F1;">Website</span>
         </h2>
         <p class="optimise-para text-muted mb-5">
@@ -217,7 +219,6 @@
     </div>
 
     <!-- Perfect Solution Section -->
-
     <div class="perfect-solution d-flex flex-column flex-xl-row align-items-center mt-5 rounded-3 justify-content-center"
         style="background-color: #F2F2F2;">
         <div class="perfect-solution-text col-xl-6 d-flex flex-column mb-4 mb-xl-0 p-5 pe-0">
@@ -278,7 +279,7 @@
         </div>
     </div>
 
-    <!-- Why Choose Us -->
+    <!-- Why Choose Us Section-->
     <div class="why-choose-us d-flex flex-column align-items-center">
         <h2 class="why-choose-text pt-5 fw-medium">Why You Should <span style="color:#6F77F1">Choose
                 Us.</span></h2>
@@ -331,6 +332,7 @@
         </div>
     </div>
 
+    <!-- SEO Section -->
     <div class="seo d-flex flex-column flex-xl-row mt-5 align-items-center justify-content-between p-md-5 gap-4">
         <img src="./assets/seo-main.png" class="h-100" />
         <div class="seo-right-side d-flex flex-column align-items-center justify-content-center">
@@ -371,6 +373,7 @@
         </div>
     </div>
 
+    <!-- Stats Section -->
     <section class="stats-section py-md-5 py-0">
         <div class="container text-center">
             <div class="row justify-content-center">
@@ -407,6 +410,7 @@
         </div>
     </section>
 
+    <!-- Website Speed Section -->
     <div class="website-speed d-flex flex-column flex-xl-row align-items-center justify-content-center">
         <div class="website-speed-left d-flex flex-column p-5 align-items-center justify-content-center">
             <h2 class="website-speed-title fw-medium">Check Your Website <span style="color: #6F77F1;">Speed</span></h2>
@@ -424,6 +428,7 @@
         <img src="./assets/speed-check.png" class="h-50 w-auto d-none d-lg-block" style="max-width: 600px;" />
     </div>
 
+    <!-- Plans Section-->
     <div class="plans d-flex flex-column">
         <h2 class="plans-title d-flex justify-content-center">Our Plans</h2>
         <p class="plans-para d-flex justify-content-center mb-5">Choose the right SEO for you</p>
@@ -485,6 +490,7 @@
         </div>
     </div>
 
+    <!-- Experts Section -->
     <div class="experts pt-5">
         <h2 class="experts-title d-flex justify-content-center">Our Expert Team Members</h2>
         <p class="experts-para d-flex justify-content-center mb-5">It is a long established fact that a reader will be
@@ -656,6 +662,7 @@
         </div>
     </div>
 
+    <!-- Clients Say Section -->
     <div class="clients-say pt-5 p-5">
         <h2 class="experts-title d-flex justify-content-center">Our Clients Say</h2>
         <p class="experts-para d-flex justify-content-center mb-lg-5">It is a long established fact that a reader will
@@ -857,7 +864,9 @@
         </div>
     </div>
 
-    <div class="subscribe d-flex flex-column p-5 align-items-center mt-5 w-75 me-auto ms-auto">
+    <!-- Subscribe Section -->
+    <div id="sub-toast"></div>
+    <div class="subscribe d-flex flex-column p-5 align-items-center mt-5 w-75 me-auto ms-auto" id="">
         <h2>Subscribe & Find The Perfect Cosmetics</h2>
         <p>Enter your email and get updated new products & news</p>
         <form id="subscribeForm" class="subscribe-search d-flex flex-md-row flex-column gap-3">
@@ -871,10 +880,11 @@
                     class="subscribe-input-email p-2 rounded w-100" required>
                 <div class="invalid-feedback"></div>
             </div>
-            <button type="submit" class="btn d-flex justify-content-center">Subscribe</button>
+            <button type="submit" id="subscribe-btn" class="btn d-flex justify-content-center">Subscribe</button>
         </form>
     </div>
 
+    <!-- Bottom Nav Section -->
     <div class="bottom-nav pt-5 d-flex flex-column align-items-center">
         <img src="./assets/nuvosa.png" />
         <div class="bottom-nav-options d-flex flex-column flex-md-row gap-lg-5 gap-2 mt-3">
@@ -886,6 +896,7 @@
         </div>
     </div>
 
+    <!-- Footer Section -->
     <footer
         class="footer border-top-1 d-flex flex-column flex-lg-row justify-content-between align-items-center ps-5 pe-5 mt-5">
         <p>Copyright © 2023 nuvosa, All rights reserved.</p>

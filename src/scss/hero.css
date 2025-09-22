@@ -164,15 +164,18 @@
   .hero-section {
     padding-left: 127px;
     padding-right: 127px;
+    margin-bottom: 9rem;
   }
   .hero-section .hero-left .hero-left-title h1 {
     font-size: 90px;
+    margin-top: 34px;
+    line-height: 100px;
   }
   .hero-section .hero-left .hero-left-title .expert-img {
     height: 79.41px;
   }
   .hero-section .hero-right {
-    width: 35%;
+    width: 20%;
   }
   .hero-section .hero-right .hero-creative {
     margin-right: 40rem;

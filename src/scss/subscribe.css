@@ -6,8 +6,98 @@
 }
 .subscribe input {
   border: 1px solid #888888;
+  transition: border-color 0.3s ease;
+}
+.subscribe input:focus {
+  outline: none;
+  border-color: #6f77f1;
+  box-shadow: 0 0 0 2px rgba(111, 119, 241, 0.2);
+}
+.subscribe input.is-invalid {
+  border-color: #dc3545;
+}
+.subscribe input.is-valid {
+  border-color: #28a745;
+}
+.subscribe .invalid-feedback {
+  display: none;
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+.subscribe .input-group {
+  position: relative;
+  flex: 1;
+}
+.subscribe input.is-invalid + .invalid-feedback {
+  display: block;
 }
 .subscribe button {
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #6f77f1;
   color: #fafafa;
+  transition: background-color 0.3s ease;
+}
+.subscribe button:hover {
+  background-color: #5a63d4;
+}
+.subscribe button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+@keyframes slide-in {
+  from {
+    display: none;
+    transform: translateY(50%);
+  }
+  to {
+    display: block;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-out {
+  from {
+    display: block;
+    transform: translateY(0);
+  }
+  to {
+    display: none;
+    transform: translateY(100%);
+  }
+}
+.toast {
+  padding: 16px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-size: 14px;
+  color: white;
+  display: none;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toast.show {
+  animation: slide-in 0.5s ease-out forwards;
+}
+
+.toast-message.hide {
+  animation: slide-out 0.5s ease-in forwards;
+}
+
+.toast.success {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+.toast.error {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
 }/*# sourceMappingURL=subscribe.css.map */

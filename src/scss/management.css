@@ -144,17 +144,20 @@
   .management .card {
     height: 334px;
   }
-  .management .card-heading h5.card-title {
+  .management .card .card-heading img {
+    height: 125px;
+    width: 125px;
+  }
+  .management .card .card-heading h5.card-title {
     font-size: 38px;
     font-weight: 400;
     padding-left: 30px;
     padding-right: 70px;
   }
-  .management .card-heading + .card-text {
+  .management .card .card-text {
     font-size: 17px;
     font-weight: 400;
     padding-left: 25px;
     padding-right: 18px;
-    padding-top: 20px;
   }
 }/*# sourceMappingURL=management.css.map */

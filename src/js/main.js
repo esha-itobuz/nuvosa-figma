@@ -1,24 +1,51 @@
-import "../scss/styles.scss";
-import Toastify from "toastify-js";
-import "toastify-js/src/toastify.css";
+import "../scss/subscribe.scss";
+// import Toastify from "toastify-js";
+// import "toastify-js/src/toastify.css";
+
+// function showToast(message, isSuccess = true) {
+//   Toastify({
+//     text: message,
+//     duration: 5000,
+//     gravity: "top",
+//     position: "right",
+//     backgroundColor: isSuccess
+//       ? "linear-gradient(to right, #00b09b, #96c93d)"
+//       : "linear-gradient(to right, #ff5f6d, #ffc371)",
+//     close: true,
+//     stopOnFocus: true,
+//     style: {
+//       borderRadius: "8px",
+//       fontFamily: "inherit",
+//       fontSize: "14px",
+//     },
+//   }).showToast();
+// }
 
 function showToast(message, isSuccess = true) {
-  Toastify({
-    text: message,
-    duration: 5000,
-    gravity: "top",
-    position: "right",
-    backgroundColor: isSuccess
-      ? "linear-gradient(to right, #00b09b, #96c93d)"
-      : "linear-gradient(to right, #ff5f6d, #ffc371)",
-    close: true,
-    stopOnFocus: true,
-    style: {
-      borderRadius: "8px",
-      fontFamily: "inherit",
-      fontSize: "14px",
-    },
-  }).showToast();
+  const toastContainer = document.getElementById("sub-toast");
+  if (!toastContainer) return;
+
+  const toast = document.createElement("div");
+  toast.classList.add("toast");
+  toast.classList.add(isSuccess ? "success" : "error");
+  toast.textContent = message;
+
+  toastContainer.appendChild(toast);
+
+  setTimeout(() => {
+    toast.classList.add("show");
+  }, 10);
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+    toast.addEventListener(
+      "transitionend",
+      () => {
+        toast.remove();
+      },
+      { once: true }
+    );
+  }, 3000);
 }
 
 function validateName(name) {

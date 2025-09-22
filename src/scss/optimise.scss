@@ -11,13 +11,13 @@
     font-weight: 400;
   }
 
-  .card{
+  .card {
     height: 350px;
-    h5{
+    h5 {
       font-size: 18px;
     }
 
-    .card-read-text{
+    .card-read-text {
       padding-top: 8px;
     }
 
@@ -31,7 +31,7 @@
     flex-grow: 1;
     padding-left: 20px;
     padding-right: 15px;
-  } 
+  }
   .optimise-keyword {
     .card {
       background-image: url("../assets/1.png");
@@ -80,7 +80,7 @@
 
     .card {
       height: 400px;
-      
+
       h5 {
         font-size: 20px;
       }
@@ -97,7 +97,7 @@
     }
   }
 }
- 
+
 @media (min-width: 1200px) {
   .optimise-website {
     padding-left: 80px;
@@ -113,7 +113,7 @@
 
     .card {
       height: 450px;
-      
+
       h5 {
         font-size: 22px;
       }
@@ -131,29 +131,30 @@
   }
 }
 
-@media (min-width: 1850px){
-  .optimise-website{
+@media (min-width: 1850px) {
+  .optimise-website {
     padding-left: 127px;
     padding-right: 67px;
-    
-    h2{
+
+    h2 {
       font-size: 55px;
+      margin-top: 7rem;
     }
-    .optimise-para{
+    .optimise-para {
       font-size: 20px;
       font-weight: 400;
       width: 827px;
     }
-    .card{
+    .card {
       width: 400px;
       height: 472px;
-      
-      img{
+
+      img {
         margin-top: 56px;
         margin-left: 34px;
         margin-bottom: 91px;
       }
-      h5{
+      h5 {
         font-size: 24px;
         margin-bottom: 21px;
       }

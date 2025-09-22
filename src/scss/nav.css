@@ -1,7 +1,6 @@
 .navbar {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 78px;
 }
 .navbar .navbar-brand {
   height: 30px;
@@ -62,5 +61,6 @@
   .navbar {
     padding-left: 127px;
     padding-right: 128px;
+    padding-top: 78px;
   }
 }/*# sourceMappingURL=nav.css.map */

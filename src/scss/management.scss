@@ -186,22 +186,27 @@
 
     .card {
       height: 334px;
-    }
 
-    .card-heading {
-      h5.card-title {
-        font-size: 38px;
-        font-weight: 400;
-        padding-left: 30px;
-        padding-right: 70px;
+      .card-heading {
+        img {
+          height: 125px;
+          width: 125px;
+        }
+
+        h5.card-title {
+          font-size: 38px;
+          font-weight: 400;
+          padding-left: 30px;
+          padding-right: 70px;
+        }
       }
 
-      + .card-text {
+      .card-text {
         font-size: 17px;
         font-weight: 400;
         padding-left: 25px;
         padding-right: 18px;
-        padding-top: 20px;
+        // padding-top: 20px;
       }
     }
   }

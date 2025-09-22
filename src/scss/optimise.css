@@ -1,6 +1,32 @@
 .optimise-website {
-  padding-left: 127px;
-  padding-right: 67px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.optimise-website h2 {
+  font-size: 28px;
+}
+.optimise-website .optimise-para {
+  font-size: 16px;
+  font-weight: 400;
+}
+.optimise-website .card {
+  height: 350px;
+}
+.optimise-website .card h5 {
+  font-size: 18px;
+}
+.optimise-website .card .card-read-text {
+  padding-top: 8px;
+}
+.optimise-website .card img {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.optimise-website .card-body {
+  flex-grow: 1;
+  padding-left: 20px;
+  padding-right: 15px;
 }
 .optimise-website .optimise-keyword .card {
   background-image: url("../assets/1.png");
@@ -24,4 +50,88 @@
 }
 .optimise-website .col:hover {
   border-bottom: 4px solid #717ae0;
+}
+
+@media (min-width: 768px) {
+  .optimise-website {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .optimise-website h2 {
+    font-size: 35px;
+  }
+  .optimise-website .optimise-para {
+    font-size: 17px;
+  }
+  .optimise-website .card {
+    height: 400px;
+  }
+  .optimise-website .card h5 {
+    font-size: 20px;
+  }
+  .optimise-website .card img {
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+  }
+  .optimise-website .card-body {
+    padding-left: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .optimise-website {
+    padding-left: 80px;
+    padding-right: 50px;
+  }
+  .optimise-website h2 {
+    font-size: 45px;
+  }
+  .optimise-website .optimise-para {
+    font-size: 18px;
+  }
+  .optimise-website .card {
+    height: 450px;
+  }
+  .optimise-website .card h5 {
+    font-size: 22px;
+  }
+  .optimise-website .card img {
+    margin-top: 45px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+  .optimise-website .card-body {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1850px) {
+  .optimise-website {
+    padding-left: 127px;
+    padding-right: 67px;
+  }
+  .optimise-website h2 {
+    font-size: 55px;
+    margin-top: 7rem;
+  }
+  .optimise-website .optimise-para {
+    font-size: 20px;
+    font-weight: 400;
+    width: 827px;
+  }
+  .optimise-website .card {
+    width: 400px;
+    height: 472px;
+  }
+  .optimise-website .card img {
+    margin-top: 56px;
+    margin-left: 34px;
+    margin-bottom: 91px;
+  }
+  .optimise-website .card h5 {
+    font-size: 24px;
+    margin-bottom: 21px;
+  }
+  .optimise-website .card-body {
+    padding-left: 34px;
+  }
 }/*# sourceMappingURL=optimise.css.map */
