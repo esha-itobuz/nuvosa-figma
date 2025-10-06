@@ -1,5 +1,5 @@
 .plans {
-  padding: 30px 15px;
+  padding: 20px 15px;
   background-color: #fafafa;
 
   .plans-title {
@@ -43,18 +43,24 @@
 
         .plan-dollar {
           font-size: 16px;
+          color: #212528;
         }
         .plan-number {
-          font-size: 42px;
+          font-size: 50px;
+          color: #212528;
+          font-weight: 500;
+            
         }
         .plan-month {
           font-size: 18px;
-          margin-top: 25px;
+          margin-top: 30px;
+          color: #212528;
         }
       }
 
       p {
-        font-size: 14px;
+        font-size: 17px;
+        color: #828282;
         line-height: 1.5;
         margin-bottom: 8px;
         text-align: center;
@@ -70,16 +76,28 @@
     }
 
     &:hover {
-      background-image: url("../assets/plans-2-bg.png");
+      background-image: url("/assets/plans-2-bg.png");
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: center;
       color: #fafafa;
       transform: translateY(-10px);
 
-      .card-title,
-      .card-price,
-      p {
+      .card-body{
+        p{
+          color: #fafafa;
+        }
+      }
+
+      .card-title{
         color: #fafafa;
+      }
+      .card-price {
+        .plan-dollar,
+          .plan-number,
+          .plan-month {
+            color: #fafafa;
+          }
       }
 
       .btn {
@@ -226,6 +244,7 @@
     padding-right: 377px;
 
     .card {
+      height: 581px;
     }
   }
 }

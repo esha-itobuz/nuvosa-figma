@@ -1,4 +1,9 @@
 .clients-say {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .clients-title{
+    font-size: 45px;
+  }
   p {
     color: #828282;
   }
@@ -70,5 +75,13 @@
   .avatar {
     width: 50px !important;
     height: 50px !important;
+  }
+}
+
+@media(min-width: 1850px){
+  .clients-say{
+    .clients-title{
+      font-size: 55px;
+    }
   }
 }

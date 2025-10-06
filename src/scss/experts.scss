@@ -1,27 +1,75 @@
 .experts {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  .experts-title {
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .experts-para {
+    text-align: center;
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
   p {
     color: #828282;
   }
-  
-  margin-left: 55px;
-  margin-right: 55px;
-  
+
   .card-img-top {
-    height: 131px;
-    width: 131px;
+    height: 100px;
+    width: 100px;
   }
 
-  .card:hover {
-    box-shadow: 2px 2px 5px #888888;
-    border: 0;
+  .card {
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 2px 2px 5px #888888;
+      border: 0;
+    }
+  }
+
+  .expert-socials {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+  }
+
+  .card-body {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-text {
+    font-size: 13px;
+    margin-bottom: 0.75rem;
   }
 
   #expertsCarousel {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+
     .carousel-control-prev,
     .carousel-control-next {
       width: 5%;
       color: #6F77F1;
-      
+
       .carousel-control-prev-icon,
       .carousel-control-next-icon {
         background-color: #6F77F1;
@@ -39,7 +87,7 @@
         border-radius: 50%;
         margin: 0 5px;
         border: none;
-        
+
         &.active {
           background-color: #5a63d8;
         }
@@ -47,13 +95,13 @@
     }
 
     .carousel-item {
-      padding: 20px;
-      
+      padding: 20px 10px;
+
       .card {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border-radius: 12px;
         transition: transform 0.3s ease;
-        
+
         &:hover {
           transform: translateY(-5px);
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -61,13 +109,118 @@
       }
     }
   }
-}
 
-@media (min-width: 1850px) {
-  .experts {
+ 
+  @media (min-width: 768px) {
+    margin-left: 40px;
+    margin-right: 40px;
+
+    .experts-title {
+      font-size: 45px;
+    }
+
+    .experts-para {
+      font-size: 16px;
+      padding: 0 30px;
+    }
+
+    .card-img-top {
+      height: 120px;
+      width: 120px;
+    }
+
+    .expert-socials {
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .card-title {
+      font-size: 18px;
+    }
+
+    .card-text {
+      font-size: 14px;
+    }
+  }
+
+ 
+  @media (min-width: 992px) {
+    margin-left: 55px;
+    margin-right: 55px;
+
+    .experts-title {
+      font-size: 55px;
+    }
+
+    .card-img-top {
+      height: 131px;
+      width: 131px;
+    }
+
+    .expert-socials {
+      img {
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    .card-title {
+      font-size: 20px;
+    }
+
+    .card-text {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1850px) {
     .cards {
       padding-left: 377px;
       padding-right: 377px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .experts {
+    margin-left: 15px;
+    margin-right: 15px;
+
+    .experts-title {
+      font-size: 28px;
+    }
+
+    .experts-para {
+      font-size: 13px;
+      padding: 0 10px;
+    }
+
+    .card-img-top {
+      height: 90px;
+      width: 90px;
+    }
+
+    .expert-socials {
+      gap: 0.5rem !important;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    .card-title {
+      font-size: 15px;
+    }
+
+    .card-text {
+      font-size: 12px;
+    }
+
+    #expertsCarousel {
+      max-width: 100%;
     }
   }
 }
